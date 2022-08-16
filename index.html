@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Slide Animation</title>
+  </head>
+  <body>
+    <main>
+      <section class="landing">
         <nav>
-            <h3 id="logo">Dream Vacation</h3>
-            <img class="humburger" src="https://freeiconshop.com/wp-content/uploads/edd/menu-rounded-solid.png" alt="">
-            
+          <h1 id="logo">Afloat</h1>
+          <ul class="nav-links">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
         </nav>
-        <section>
-            <div class="hero">
-                <img  src="https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="humburger">
-                <h1 class="headline"> Dream big</h1>
-            </div>
-        </section>
-    </header>
-
-    <div class="slider">
-        
+        <h2 class="big-text">Stay Afloat</h2>
+      </section>
+    </main>
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Creating inovation</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">For Everyday</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">people.</span>
+        </h1>
+      </div>
     </div>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="app.js"></script>
-</body>
-
+    <div class="slider"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
 </html>

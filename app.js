@@ -1,12 +1,8 @@
-const hero = document.querySelector('.hero');
-const slider = document.querySelector('.slider')
-const logo = document.querySelector('#logo');
-const humburger = document.querySelector('.humburger');
-const headline = document.querySelector('.headline');
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-const tl = new TimelineMax();
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
-tl.fromTo(hero,1, {height: "0%"}, {height: '80%', ease: Power2.easeInOut })
-.fromTo(hero, 1.2, {width: '100%'}, {width: '80%', ease: Power2.easeInOut})
-.fromTo(slider, 1.2, {x: "-100%" }, {x: '0%' ,ease: Power2.easeInOut}, "-=1.2")
-.fromTo(logo, 0.5, {opacity: 0, x: 30}, {opacity: 1,})
